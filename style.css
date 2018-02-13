@@ -49,9 +49,6 @@ header.startup h1 {
 .btn-primary {
   background-color: #F05F44;
   border-color: #F05F44;
-  display: flex;
-  justify-content: center;
-
 }
 
 .btn-primary:hover {
