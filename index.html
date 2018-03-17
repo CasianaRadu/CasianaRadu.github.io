@@ -1,59 +1,167 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Startup</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<!--		<link href="slim-10_7.css"  type="text/css" rel="stylesheet">-->
+<head>
+    <title>My website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+</head>
 
+<body>
 
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <div id="container">
 
-    <!-- My own stylesheet -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="startup text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-12 my-auto">
-            <h1 class="text-uppercase faded">
-              <strong>the biggest startup event of the year</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-12 my-auto">
-			
-				  <!-- Begin MailChimp Signup Form -->
-<!--	<link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">-->
-	<style type="text/css">
-	<style type="text/css">
-		#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
-		/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-		   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-	</style>
-	<div id="mc_embed_signup">
-	<form action="https://donut.us17.list-manage.com/subscribe/post?u=f41d8575f3ba9a4df5cafa1c2&amp;id=cfa3240ab8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		<div id="mc_embed_signup_scroll">
-		
+        <!--Header-->
 
-		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f41d8575f3ba9a4df5cafa1c2_cfa3240ab8" tabindex="-1" value=""></div>
-		<div class="clear"><input class="btn btn-primary btn-xl" type="submit" value="Find out more" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-		</div>
-	</form>
-	</div>
+        <div id="header">
+            <img id="logo-header" src="Images/logo-header.png" width="128" height="50" alt="Logo-header">
+            <img id="bg-header" src="Images/bg-header.jpg" width="1599" height="662" alt="Background-header">
 
-	<!--End mc_embed_signup-->
-          
-          </div>
+            <!--Main-menu-->
+
+            <div id="main-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" target="_blank">ABOUT</a></li>
+                    <li><a href="expertise.html" target="_blank">EXPERTISE</a></li>
+                    <li><a href="teams.html" target="_blank">TEAMS</a></li>
+                    <li><a href="works.html" target="_blank">WORKS</a></li>
+                    <li><a href="people-say.html" target="_blank">PEOPLE SAY</a></li>
+                    <li><a href="contact.html" target="_blank">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!--Title-->
+
+            <div id="text-intro">
+                <h1>We Are Awesome Creative Agency</h1>
+                <div class="separator-intro"></div>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                    a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                <a class="button-intro" href="learn-more.html">LEARN MORE</a>
+            </div>
         </div>
-      </div>
-    </header>
 
-  </body>
+
+        <!--Middle-section-->
+
+        <div id="middle-section">
+            <img id="logo-about" src="Images/logo-about.png" width="235" height="229" alt="Logo-about">
+            <h1>OUR STORY</h1>
+            <div id="about">
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus<br><br>                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <a class="button-about" href="learn-more.html">LEARN MORE</a>
+            </div>
+
+
+            <!--Main-articles-->
+
+            <div id="main-articles">
+                <!--<div class="expertise">-->
+                <span>EXPERTISE</span>
+                <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                <div class="separator-articles">
+                    <!--</div>-->
+                </div>
+
+                <!--Table-->
+
+                <table>
+                    <tr>
+                        <th><img src="Images/web.png" width="49" height="50"></th>
+                        <th><img src="Images/brush.png" width="50" height="42"></th>
+                        <th><img src="Images/mobile.png" width="28" height="50"></th>
+                    </tr>
+                    <tr class="row">
+                        <td>WEB DESIGN &amp DEVELOPMENT</td>
+                        <td>BRANDING IDENTITY</td>
+                        <td>MOBILE APP</td>
+                    </tr>
+                    <tr>
+                        <td>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</td>
+                        <td>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</td>
+                        <td>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</td>
+                    </tr>
+                    <tr>
+                        <th><img src="Images/search-engine.png" width="50" height="50"></th>
+                        <th><img src="Images/game.png" width="41" height="50"></th>
+                        <th><img src="Images/heart.png" width="50" height="46"></th>
+                    </tr>
+                    <tr class="row">
+                        <td>SEARCH ENGINE OPTIMIZATION</td>
+                        <td>GAME DEVELOPMENT</td>
+                        <td>MADE WITH LOVE</td>
+                    </tr>
+                    <tr>
+                        <td>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</td>
+                        <td>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</td>
+                        <td>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+
+        <!--Footer-->
+
+        <div id="footer">
+            <div class="wrapper">
+                <div class="column-footer left">
+                    <img id="logo-footer" src="Images/logo-footer.png" width="128" height="50" alt="Logo">
+                    <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit auctror a ornare odio non mauris vitae erat in elit</p>
+                    <div class="about">
+                        <a href="help.html">HELP</a>
+                        <a href="terms.html">TERMS &amp CONDITION</a>
+                        <a href="privacy.html">PRIVACY</a>
+                    </div>
+
+                </div>
+
+                <!--Contact-->
+
+                <div class="column-footer">
+                    <h2>OUR STUDIO</h2>
+                    <div class="address">
+                        <img class="icon" src="Images/address-icon.png" width="14" height="19" alt="Address-icon">
+                        <div class="studio_rubric">
+                            <p>Ruko cucruk, Jl. Radio luar dalem jos<br> No.12 - 13, Kalideres - Jakarta Barat<br> 11480 - Indonesia </p>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <img class="icon" src="Images/phone-icon.png" width="17" height="17" alt="Phone-icon">
+                        <div class="studio_rubric">
+                            <p>(+62) 21-2224 3333</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Newsletter-->
+
+                <div class="column-footer">
+                    <h2>STAY IN TOUCH</h2>
+                    <form>
+                        <input type="email" name="email" placeholder="Subscribe our newsletter" required>
+                        <input type="image" src="Images/submit.png" width="70" height="45" alt="Submit">
+                    </form>
+                    <div class="social">
+                        <a href="https://facebook.com"><img src="Images/facebook.png" width="35" height="35" alt="Facebook"></a>
+                        <a href="https://twitter.com"><img src="Images/twitter.png" width="35" height="35" alt="Twitter"></a>
+                        <a href="https://outlook.com"><img src="Images/outlook.png" width="35" height="35" alt="Outlook"></a>
+                        <a href="https://instagram.com"><img src="Images/instagram.png" width="35" height="35" alt="Instagram"></a>
+                        <a href="https://google.com"><img src="Images/google.png" width="35" height="35" alt="Google"></a>
+                        <a href="https://youtube.com"><img src="Images/youtube.png" width="35" height="35" alt="Youtube"></a>
+                    </div>
+                    <div class="copyright">Copyright &copy 2015 - Tajem Creative</div>
+                    <div class="clear_div"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
