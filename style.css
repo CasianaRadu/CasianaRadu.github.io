@@ -1,114 +1,109 @@
 body {
-     margin: 0;
-     padding: 0;
+    margin: 0;
+    padding: 0;     
 }
 
 #container {
-     overflow: hidden;
-     margin: auto;
+    /* TODO: DELETE THIS ELEMENT OR USE IT FOR SOMETHING USEFULL */
 }
 
-/*Header*/
 
-#bg-header {
-     position: absolute;
-     margin: 0;
-     padding: 0;
-     top: 0%;
-     left: 0%;
-     width: 100%;
-     height: 662px;
+/*Header*/
+#header {
+    color: #ffffff;
+    background: transparent url(Images/bg-header.jpg) no-repeat scroll center top;
+    height: 667px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
 }
 
 #logo-header {
-     position: absolute;
-     z-index: 2;
-     top: 2%;
-     left: 21%;
+    float: left;
+    padding-top: 15px;
 }
+
 
 /*Main-menu*/
-
 #main-menu {
-     position: relative;
-     left: 35%;
-     z-index: 2;
+    float: right;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 900;
+    padding-top: 30px;
 }
 
-li {
-     font-family: 'Roboto', serif, sans-serif;
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     display: inline-block;
-     font-size: 13px;
-     line-height: 13px;
-     position: relative;
-     top: 15px;
+#main-menu ul {
+    margin: 0;
+    padding: 0;
 }
 
-li a {
-     text-decoration: none;
-     padding: 25px;
-     height: 36px;
-     color: #ffffff;
-     font-weight: bold;
+#main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
 }
-li a:active {
+
+#main-menu ul li a {
+    text-decoration: none;
+    padding: 5px 11px;
+    color: #ffffff;
+    display: block;
+}
+
+#main-menu ul li:last-child a {
+    padding-right: 0;
+}
+
+#main-menu ul li a:hover,
+#main-menu ul li.selected-item a {
      color: #00e0d0;
 }
 
 /*Title*/
-
 #text-intro {
-     position: relative;
-     text-align: center;
-     color: #ffffff;
-     padding: 20px;
-     margin: 20%;
-     width: 60%;
-     bottom: 100px;
-}
-#text-intro > h1 {
-     font-family: 'Roboto', serif, sans-serif;
-     font-size: 32px;
-     line-height: 13px;
-     bottom: 0px;
-     position: relative;
-     color: #ffffff;
+    clear: both;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
 }
 
-#text-intro > p {
-     font-family: 'Roboto', serif, sans-serif;
-     font-size: 14px;
-     line-height: 24px;
-     padding: 52px;
-     position: relative;
-     color: #ffffff;
-     bottom: 30px;
+#text-intro h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 900;
+    padding-top: 156px;
 }
 
-.separator-intro {
-     border-top: 2px solid #00e0d0;
-     width: 50px;
-     height: 1px;
-     margin: auto;
-     position: relative;
-     top: 19px;
-    ;
+#text-intro h1:after {
+    content: "";
+    display: block;
+    border-top: 1px solid #00e0d0;
+    width: 50px;
+    margin: 21px auto 24px;
+}
+
+#text-intro p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+    word-spacing: 6px;
 }
 
 .button-intro {
-     color: #00e0d0;
-     font-size: 16px;
-     line-height: 13px;
-     font-family: 'Roboto', serif, sans-serif;
-     text-decoration: none;
-     border: 2px solid #00e0d0;
-     padding: 15px;
-     box-sizing: border-box;
-     position: relative;
-     bottom: 27px;
+    color: #00e0d0;
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Hammersmith One', sans-serif;
+    text-decoration: none;
+    border: 1px solid #00e0d0;
+    padding: 11px 15px 8px;
+    display: inline-block;
+    margin-top: 29px;
 }
 
 /*Middle-section*/
@@ -132,7 +127,7 @@ li a:active {
 }
 
 #middle-section h1 {
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      font-size: 22px;
      font-weight: bold;
      line-height: 13px;
@@ -144,7 +139,7 @@ li a:active {
 }
 
 #about p {
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      font-size: 14px;
      line-height: 22px;
      color: #817f86;
@@ -163,7 +158,7 @@ li a:active {
 }
 
 span {
-     font-family: 'Playfair Display', serif, sans-serif;
+     font-family: 'Playfair Display', Arial, sans-serif;
      font-size: 22px;
      font-weight: bold;
      line-height: 13px;
@@ -175,7 +170,7 @@ span {
 }
 
 #main-articles p {
-     font-family: 'Playfair Display', serif, sans-serif;
+     font-family: 'Playfair Display', Arial, sans-serif;
      font-size: 14px;
      line-height: 13px;
      color: #8d8c90;
@@ -199,7 +194,7 @@ span {
      color: #00e0d0;
      font-size: 16px;
      line-height: 13px;
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      text-decoration: none;
      border: 2px solid #00e0d0;
      padding: 15px;
@@ -226,7 +221,7 @@ th {
 }
 
 td {
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      font-size: 14px;
      line-height: 22px;
      color: #7a7a7a;
@@ -235,7 +230,7 @@ td {
 }
 
 .row td {
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      font-size: 14px;
      font-weight: bold;
      line-height: 13px;
@@ -269,7 +264,7 @@ td {
 }
 
 .column-footer p {
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      font-size: 14px;
      line-height: 26px;
      color: #ffffff;
@@ -278,7 +273,7 @@ td {
 }
 
 .about > a {
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      font-size: 14px;
      line-height: 26px;
      text-decoration: none;
@@ -292,7 +287,7 @@ td {
 /*Contact*/
 
 h2, .address {
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      font-size: 15px;
      line-height: 26px;
      color: #ffffff;
@@ -355,9 +350,8 @@ input[type="image"] {
      position: relative;
      top: 100px;
      left: 69px;
-     font-family: 'Roboto', serif, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
      font-size: 14px;
      line-height: 26px;
      color: #ffffff;
 }
- 
