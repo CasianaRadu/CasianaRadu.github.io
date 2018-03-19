@@ -3,10 +3,6 @@ body {
     padding: 0;     
 }
 
-#container {
-    /* TODO: DELETE THIS ELEMENT OR USE IT FOR SOMETHING USEFULL */
-}
-
 
 /*Header*/
 #header {
@@ -62,7 +58,9 @@ body {
      color: #00e0d0;
 }
 
+
 /*Title*/
+
 #text-intro {
     clear: both;
     text-align: center;
@@ -103,140 +101,124 @@ body {
     border: 1px solid #00e0d0;
     padding: 11px 15px 8px;
     display: inline-block;
-    margin-top: 29px;
+    margin-top: 18px;
 }
+
 
 /*Middle-section*/
 
 #middle-section {
-     width: 100%;
-     height: 1116px;
-     margin: 0 auto;
-}
-
-#about {
-     background-color: #ffffff;
-     float: left;
+   background-color: #ffffff;
 }
 
 #logo-about {
-     float: left;
-     padding: 6%;
-     position: relative;
-     bottom: 230px;
+    float: left; 
+    padding: 73px 100px 73px 65px;
 }
 
-#middle-section h1 {
-     font-family: 'Roboto', Arial, sans-serif;
-     font-size: 22px;
-     font-weight: bold;
-     line-height: 13px;
-     color: #413d4b;
-     display: block;
-     position: absolute;
-     margin-left: 33%;
-     bottom: 155px;
+#about {
+    padding-top: 60px;  
+    padding-left: 36px;
+}
+
+#about h1 {
+    font-family: 'Playfair Display', Arial, serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #413d4b;
+    margin-top: 7px;  
 }
 
 #about p {
-     font-family: 'Roboto', Arial, sans-serif;
-     font-size: 14px;
-     line-height: 22px;
-     color: #817f86;
-     padding: 28px;
-     width: 680px;
-     display: block;
-     position: relative;
-     bottom: 125px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    color: #817f86;   
+    padding: 6px;
 }
+
+.button-about {
+    color: #00e0d0;
+    font-size: 16px;
+    line-height: 13px;
+    font-family: 'Hammersmith One', sans-serif;
+    text-decoration: none;
+    border: 1px solid #00e0d0;
+    padding: 13px;
+    display: inline-block;
+    margin-top: 9px;   
+}
+
 
 /*Main-articles*/
 
 #main-articles {
-     text-align: center;
-     padding: 100px 330px 468px;
+    text-align: center;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 96px 0;
+    box-sizing: border-box;
 }
 
 span {
-     font-family: 'Playfair Display', Arial, sans-serif;
-     font-size: 22px;
-     font-weight: bold;
-     line-height: 13px;
-     color: #413d4b;
-     position: relative;
-     text-align: center;
-     right: 30px;
-     top: 100px;
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #413d4b;
+    margin-right: 10px;
 }
 
-#main-articles p {
-     font-family: 'Playfair Display', Arial, sans-serif;
-     font-size: 14px;
-     line-height: 13px;
-     color: #8d8c90;
-     position: relative;
-     right: 30px;
-     text-align: center;
-     top: 100px;
+#main-articles .expertise:first-child p {
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #2f2d35;
 }
 
  .separator-articles {
-     border-top: 2px solid #c6c4c9;
+     border-top: 1px solid #c6c4c9;
      width: 50px;
      height: 2px;
      margin: auto;
-     position: relative;
-     left: 4px;
-     top: 100px;
+     color: #adadad;
 }
 
-.button-about {
-     color: #00e0d0;
-     font-size: 16px;
-     line-height: 13px;
-     font-family: 'Roboto', Arial, sans-serif;
-     text-decoration: none;
-     border: 2px solid #00e0d0;
-     padding: 15px;
-     box-sizing: border-box;
-     margin-left: 30px;
-     position: relative;
-     bottom: 110px;
+
+/*Article column*/
+
+.article-column {
+    float: left;
+    width: 33.33%;
+    margin-top: 77px;
+    background: url(Images/border-middle-section.png);   
 }
 
-/*Table*/
-
-table {
-     width: 950px;
-     height: 504px;
-     box-sizing: border-box;
-     position: relative;
-     right: 170px;
-     top: 150px;
-     background-image: url(Images/border-middle-section.png);
+#main-articles h2 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    color: #413d4b; 
+    padding-top: 13px;
+    padding-right: 20px;
 }
 
-th {
-     padding-top: 40px;
+#main-articles p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    color: #333333;
+    margin: 13px;
 }
 
-td {
-     font-family: 'Roboto', Arial, sans-serif;
-     font-size: 14px;
-     line-height: 22px;
-     color: #7a7a7a;
-     text-align: center;
-     padding: 15px;
-}
-
-.row td {
-     font-family: 'Roboto', Arial, sans-serif;
-     font-size: 14px;
-     font-weight: bold;
-     line-height: 13px;
-     color: #413d4b;
-     text-align: center;
-}
 
 /*Footer*/
 
@@ -263,35 +245,48 @@ td {
      clear: both;
 }
 
-.column-footer p {
-     font-family: 'Roboto', Arial, sans-serif;
-     font-size: 14px;
-     line-height: 26px;
-     color: #ffffff;
-     width: 288px;
-     height: 97px;
+#logo-footer {
+    padding-top: 9px;
+    padding-left: 5px;
 }
 
-.about > a {
-     font-family: 'Roboto', Arial, sans-serif;
-     font-size: 14px;
-     line-height: 26px;
-     text-decoration: none;
-     color: #ffffff;
-     box-sizing: border-box;
-     position: relative;
-     top: 100px;
-     padding-right: 27px;
+.column-footer p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.0025em;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 3px;
 }
+
+.column-footer .about:last-child a {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 27px;
+    margin-top: 53px;
+    display: inline-block;
+}
+
 
 /*Contact*/
 
-h2, .address {
+h3, .address {
      font-family: 'Roboto', Arial, sans-serif;
      font-size: 15px;
-     line-height: 26px;
      color: #ffffff;
-     padding: 5px;
+     padding-top: 13px;
+    padding-left: 8px;
+}
+
+h3 {
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
 }
 
 .address {
@@ -299,9 +294,12 @@ h2, .address {
 }
 
 .icon {
-     display: table-cell;
-     padding-right: 16px;
-     margin-top: 5px;
+    display: table-cell;
+    padding-top: 12px;
+    padding-right: 9px;
+    padding-left: 9px;
+    margin-top: 5px;
+    float: left;
 }
 
 .studio_rubric {
@@ -310,48 +308,54 @@ h2, .address {
 }
 
 .studio_rubric p {
-     margin-top: 0px;
-     box-sizing: border-box;
-     padding-right: 40px;
-     margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 14px;
 }
 
 .left p {
      padding-right: 40px;
 }
 
-.icon {
-     padding-right: 16px;
-}
 
 /*Newsletter*/
 
 input[type="email"] {
-     height: 45px;
-     background-color: rgba(0, 0, 0, 0.1);
-     box-sizing: border-box;
-     padding: 17px;
-     border: 2px solid #9e97b0;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border: 1px solid #9e97b0;
+    padding-top: 40px;
+    padding-left: 48px;
+    margin-left: 10px;
 }
 
-input[type="image"] {
-     position: absolute;
-     padding-left: 11px;
+input {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: left;
+}
+
+input[type="image"]:any-link {
+     padding-top: 30px;
+     padding-left: 15px;
 }
 
 .social a {
      display: inline-block;
      padding-top: 27px;
-     padding-right: 9px;
+     padding-right: 8px;
+    padding-bottom: 60px;
 }
 
 .copyright {
-     box-sizing: border-box;
-     position: relative;
-     top: 100px;
-     left: 69px;
-     font-family: 'Roboto', Arial, sans-serif;
-     font-size: 14px;
-     line-height: 26px;
-     color: #ffffff;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    margin-top: 20px;
 }
