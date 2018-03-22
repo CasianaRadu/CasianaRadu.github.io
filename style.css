@@ -1,14 +1,17 @@
 body {
     margin: 0;
-    padding: 0;     
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 
 /*Header*/
+
 #header {
-    color: #ffffff;
     background: transparent url(Images/bg-header.jpg) no-repeat scroll center top;
     height: 667px;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 .container {
@@ -25,7 +28,6 @@ body {
 /*Main-menu*/
 #main-menu {
     float: right;
-    font-family: 'Roboto', Arial, sans-serif;
     font-size: 13px;
     line-height: 13px;
     font-weight: 900;
@@ -66,6 +68,7 @@ body {
     text-align: center;
     width: 85%;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 #text-intro h1 {
@@ -85,7 +88,6 @@ body {
 }
 
 #text-intro p {
-    font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
     line-height: 1.8;
     font-weight: 300;
@@ -121,17 +123,17 @@ body {
     padding-left: 36px;
 }
 
-#about h1 {
+h2 {
     font-family: 'Playfair Display', Arial, serif;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2;
     color: #413d4b;
     margin-top: 7px;  
+    text-transform: uppercase;
 }
 
 #about p {
-    font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.03em;
@@ -157,35 +159,30 @@ body {
 
 #main-articles {
     text-align: center;
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 96px 0;
-    box-sizing: border-box;
+    margin-top: 96px;
 }
 
-span {
-    font-family: 'Playfair Display', Arial, sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #413d4b;
-    margin-right: 10px;
-}
-
-#main-articles .expertise:first-child p {
+#main-articles .subtitle {
     font-family: 'Playfair Display', Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.2;
     color: #2f2d35;
+    opacity: 0.75;
+    margin-top: 11px;
+    margin-bottom: 15px;
 }
 
- .separator-articles {
-     border-top: 1px solid #c6c4c9;
-     width: 50px;
-     height: 2px;
-     margin: auto;
-     color: #adadad;
+
+ #main-articles .subtitle:after {
+    content: "";
+    display: block;
+    border-top: 2px solid #c6c4c9;
+    width: 50px;
+    height: 2px;
+    margin: auto;
+    color: #adadad;
+    margin: 20px auto 24px;
 }
 
 
@@ -194,46 +191,58 @@ span {
 .article-column {
     float: left;
     width: 33.33%;
-    margin-top: 77px;
-    background: url(Images/border-middle-section.png);   
+    border-top: 1px solid #ebebeb;   
+    box-sizing: border-box;
+    padding-top: 40px;
 }
 
-#main-articles h2 {
-    font-family: 'Roboto', Arial, sans-serif;
+.article-column:nth-child(3n+2) {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.article-column:nth-child(1),
+.article-column:nth-child(2),
+.article-column:nth-child(3) {
+    border-top: none;
+}
+    
+.article-column-image-wrapper {
+    height: 50px;
+}
+
+h3 {
     font-size: 14px;
     font-weight: 900;
     letter-spacing: 0.05em;
     line-height: 1.5;
     color: #413d4b; 
-    padding-top: 13px;
-    padding-right: 20px;
+    margin-top: 25px;  
 }
 
-#main-articles p {
-    font-family: 'Roboto', Arial, sans-serif;
+#main-articles .box p {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.05em;
-    line-height: 1.5;
+    line-height: 1.7;
     color: #333333;
-    margin: 13px;
+    opacity: 0.75;
 }
 
+#main-articles .box p {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 /*Footer*/
 
 #footer {
-     background-image: url(Images/bg-footer.png);
-     width: 100%;
-     height: 400px;
-}
-
-.wrapper {
-     max-width: 950px;
-     width: 100%;
-     margin: 0 auto;
-     padding: 50px 0;
-     box-sizing: border-box;
+    background: transparent url(Images/bg-footer.png) no-repeat scroll center top;
+    width: 100%;
+    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .column-footer {
@@ -251,7 +260,6 @@ span {
 }
 
 .column-footer p {
-    font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.0025em;
@@ -261,44 +269,28 @@ span {
     margin-left: 3px;
 }
 
-.column-footer .about:last-child a {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    text-decoration: none;
-    color: #ffffff;
-    padding-right: 27px;
-    margin-top: 53px;
-    display: inline-block;
-}
-
 
 /*Contact*/
 
-h3, .address {
-     font-family: 'Roboto', Arial, sans-serif;
+h4, .address {
      font-size: 15px;
      color: #ffffff;
      padding-top: 13px;
     padding-left: 8px;
 }
 
-h3 {
+h4 {
     font-weight: 900;
     line-height: 1.2;
     letter-spacing: 0.05em;
 }
 
-.address {
-     display : table;
-}
+
 
 .icon {
-    display: table-cell;
-    padding-top: 12px;
-    padding-right: 9px;
-    padding-left: 9px;
-    margin-top: 5px;
+    padding-top: 10px;
+    padding-right: 13px;
+    padding-left: 5px;
     float: left;
 }
 
@@ -310,7 +302,7 @@ h3 {
 .studio_rubric p {
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-top: 14px;
+    margin-top: 7px;
 }
 
 .left p {
@@ -321,41 +313,53 @@ h3 {
 /*Newsletter*/
 
 input[type="email"] {
-    height: 45px;
+    height: 41px;
     background-color: rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border: 1px solid #9e97b0;
-    padding-top: 40px;
-    padding-left: 48px;
-    margin-left: 10px;
-}
-
-input {
-    font-family: 'Roboto', Arial, sans-serif;
+    /* padding-top: 40px; */
+    padding-left: 18px;
+    float: left;
+    width: 190px;
+    margin-right: 5px;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
-    text-align: left;
+    color: red;
 }
 
-input[type="image"]:any-link {
-     padding-top: 30px;
-     padding-left: 15px;
+
+input[type="image"] {
+    float: left;
 }
 
-.social a {
-     display: inline-block;
-     padding-top: 27px;
-     padding-right: 8px;
+#footer .social a {
+    display: inline-block;
+    padding-top: 27px;
+    padding-right: 8px;
     padding-bottom: 60px;
 }
 
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2; 
+    float: left;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 5px;
+}
+
+
+
 .copyright {
-    font-family: 'Roboto', Arial, sans-serif;
+    float: right;
     font-size: 14px;
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #ffffff;
-    margin-top: 20px;
+    padding-top: 15px;
 }
