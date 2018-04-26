@@ -1,0 +1,101 @@
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    
+.container {
+    width: auto;
+    height: 667px;
+}
+    
+    /*Header*/
+    
+ #logo-header {
+    padding-left: 40px;
+}
+    
+   /*Main-menu*/
+    
+#main-menu ul li:last-child a {
+    padding-right: 30px;
+}
+    
+    /*Main-articles*/
+    
+#main-articles {
+    margin: 0;
+}
+    
+#main-articles .box p {
+    display: none;
+}
+
+#main-articles .container {
+    width: auto;
+    height: 500px;
+}
+    
+h3 {
+    font-size: 15px;
+    margin-left: 12px;
+  
+}
+ 
+.article-column {
+    border-top: none;    
+}
+    
+.article-column:nth-child(3n+2) {
+    border-left: none;
+    border-right: none;
+}
+    
+    /*Footer*/
+    
+#footer .container {
+    width: 100%;
+    height: auto;
+}   
+    
+.left-column {
+    display: none;
+}
+    
+.column-footer {
+    width: 50%;        
+}
+ 
+h4 {
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+    
+.icon {
+    padding-left: 25px;
+    
+}
+    
+input[type="email"] {
+    margin-left: 35px; 
+}
+    
+#footer .social a {
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-right: 25px;
+    padding-bottom: 60px;
+    
+}
+    
+#footer .social a:first-child {
+    padding-left: 40px;
+}
+   
+.footer-links a {
+    display: none;
+}
+    
+.copyright {
+    float: none;
+    margin: 0 auto;
+    width: 33.33%;
+}
+    
+}
