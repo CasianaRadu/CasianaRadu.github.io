@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="phone.css">
     <link rel="stylesheet" type="text/css" href="tablet.css">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:300,300i,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                 <img id="logo-header" src="Images/logo-header.png" width="128" height="50" alt="Logo-header">
 
                 <!--Main-menu-->
-                <div id="main-menu">
+                <div class="mainmenu" id="myMainmenu">
                     <ul>
                         <li class="selected-item"><a href="index.html">HOME</a></li>
                         <li><a href="about.html" target="_blank">ABOUT</a></li>
@@ -34,6 +35,11 @@
                         <li><a href="people-say.html" target="_blank">PEOPLE SAY</a></li>
                         <li><a href="contact.html" target="_blank">CONTACT</a></li>
                     </ul>
+                    
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
             
                 <!--Title-->
@@ -168,6 +174,18 @@
             
         </div>
     </div>
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myMainmenu");
+            if (x.className === "mainmenu") {
+            x.className += " responsive";
+            } else {
+            x.className = "mainmenu";
+        }
+        }
+    </script>
+    
 </body>
 
 </html>

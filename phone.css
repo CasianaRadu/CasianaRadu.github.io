@@ -17,21 +17,83 @@ html,body {
 }
     
 #logo-header {
-    object-fit: contain;
-    width: 100%;
+    margin-left: 50px;
+    margin-top: 56px;
+    padding-top: 0;
 }
     
     /*Main-menu*/
     
-#main-menu ul li:nth-child(1){
-    margin-left: 40px;
+.mainmenu {
+  overflow: hidden;
+}
+   
+.mainmenu ul li {
+    list-style-type: none;
+    display: block;
 }
 
-#main-menu ul li:nth-child(5){
-    margin-left: 60px;
+.mainmenu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.mainmenu a:hover {
+  background-color: #2E214C;
+  color: black;
+}
+
+.selected-item {
+    color: white;
+    padding-top: 15px;
 }
     
+ul {
+    width: 100%;
+}
+        
+ul li {
+    font-size: 13px;
+    display: block;
+    text-align: center;
+}
     
+
+.mainmenu .icon {
+  display: none;
+}
+
+
+.mainmenu a:not(.selected-item) {
+    display: none;
+}
+        
+.mainmenu a.icon {
+    display: block;
+    margin-right: 35px;
+} 
+        
+
+.mainmenu.responsive {
+    position: relative;
+    background-color: rgba(233,230,242,0.1)
+}
+        
+.mainmenu.responsive a.icon {
+    position: absolute;
+    top: 10px;
+}
+    
+.mainmenu.responsive a {
+    display: block;
+}
+
+      
     /*Title*/
  
 #text-intro h1 {
@@ -56,9 +118,10 @@ html,body {
     
 #logo-about {
     float: none;
-    padding: 73px 50px 73px 50px;
+    padding: 73px 100px;
 }
     
+
 h2 {
     font-size: 30px;
     text-align: center;
@@ -73,7 +136,7 @@ h2 {
 .button-about {
     font-size: 15px;
     margin-top: 20px; 
-    margin-left: 100px;
+    margin-left: 150px;
 
 }
     
@@ -88,7 +151,7 @@ h2 {
 .article-column {
     width: 50%;
     border: none;
-    margin-left: 85px;
+    margin-left: 100px;
 }
     
 .article-column:nth-child(3n+2) {
@@ -122,6 +185,7 @@ h3:after {
 .column-footer {
     float: none;
     width: 100%; 
+    margin-left: 25px;
 }
  
 h4 {
